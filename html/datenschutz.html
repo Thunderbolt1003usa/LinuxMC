@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" href="tuxrandom64.png">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Datenschutzerklärung</title>
+  
+  <script defer src="/main.js"></script>
+</head>
+
+<body>
+  <!-- Rechts oben: nur Button/Avatar + Dropdown-Menü -->
+  <div id="user-widget" class="user-widget" aria-live="polite">
+    <!-- Wird von GIS gerendert, solange nicht eingeloggt -->
+    <div id="login-container" class="login-container" aria-label="Login mit Google"></div>
+
+    <!-- Avatar-Button erscheint nach Login -->
+    <button id="avatar-btn" class="avatar-btn" aria-haspopup="menu" aria-expanded="false" hidden>
+      <img id="user-avatar" alt="">
+    </button>
+
+    <!-- Dropdown-Menü mit Name/Email/Logout -->
+    <div id="user-menu" class="user-menu" role="menu" hidden>
+      <div class="menu-header">
+        <img id="menu-avatar" class="menu-avatar" alt="Profilbild">
+        <div class="menu-ident">
+          <div id="menu-name" class="menu-name"></div>
+          <div id="menu-email" class="menu-email"></div>
+        </div>
+      </div>
+      <button id="logout-btn" class="menu-action" type="button" role="menuitem">Logout</button>
+    </div>
+  </div>
+
+  <main class="container" role="main" aria-labelledby="title">
+    <p>
+      <a class="mailto" href="/index.php" aria-label="Zurück zur Startseite">Startseite</a>
+      <a class="mailto" href="/ipinfo.php" aria-label="IPv6 Informationen">IPv6</a>
+      <a class="mailto" href="mailto:ys6v9rqpp@mozmail.com" aria-label="E-Mail">Kontakt</a>
+      <a class="mailto" href="/datenschutz.html" aria-label="Datenschutzerklärung">Datenschutzerklärung</a>
+      <a class="mailto" href="https://wiki.linuxmc.tech" aria-label="Wiki">Wiki</a>
+      <a class="mailto" href="https://files.linuxmc.tech" aria-label="Files">Files</a>
+      <a class="mailto" href="https://id.linuxmc.tech" aria-label="ID">ID</a>
+    </p>
+    <h1 id="datenschutz-title">Datenschutzerklärung</h1>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>Thunderbolt1003USA • E-Mail: <a href="mailto:ys6v9rqpp@mozmail.com">ys6v9rqpp@mozmail.com</a></p>
+
+    <h2>2. Hosting (Selfhosting) und Server-Logs</h2>
+    <p>Diese Website wird auf eigener Hardware in meinem privaten Netzwerk betrieben (Selfhosting). Es wird kein
+      externer Hosting-Dienstleister eingesetzt.</p>
+    <p>Bei jedem Aufruf werden technisch bedingt Server-Logdaten verarbeitet: IP-Adresse, Datum/Uhrzeit, aufgerufene
+      URL, Referrer (sofern vorhanden), User-Agent, übertragene Datenmenge, Statuscode.</p>
+    <p>Zwecke: Betrieb der Website, Sicherheit, Missbrauchs- und Fehlererkennung. Rechtsgrundlage: Art. 6 Abs. 1 lit. f
+      DSGVO (berechtigtes Interesse).</p>
+    <p>Speicherdauer: 30 Tage, aber Logs können länger gespeichert werden (z.B wegen Ermittlungen von Behörden).</p>
+    <p>Empfänger: keine Weitergabe an Dritte. Administrativer Zugriff ausschließlich durch den Verantwortlichen. Der
+      eigene Internetzugangsanbieter verarbeitet Verbindungsdaten eigenverantwortlich.</p>
+
+    <h2>3. Anzeige deiner IP (meineip.php)</h2>
+    <p>Zur Bereitstellung der Funktion wird deine öffentliche IP verarbeitet und dir angezeigt. Eine Speicherung erfolgt
+      nicht über die unter Punkt 2 genannten Logs hinaus.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Bereitstellung der Funktion).</p>
+
+    <h2>4. Kontakt per E-Mail</h2>
+    <p>Bei Kontaktaufnahme werden E-Mail-Adresse, Inhalt, Metadaten (inkl. Header/IPs) zur Bearbeitung deiner Anfrage
+      verarbeitet.</p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Kommunikation) oder lit. f DSGVO (allg. Anfragen).
+    </p>
+    <p>Speicherdauer: bis Abschluss der Anfrage; gesetzliche Aufbewahrungspflichten bleiben unberührt.</p>
+    <p>Hinweis: Die Adresse nutzt mozmail.com (Firefox Relay). Je nach Anbieter können technische Übermittlungen
+      außerhalb des EWR stattfinden; Details siehe Datenschutzhinweise des Anbieters.</p>
+
+    <!-- NEU EINGEFÜGT: Google Login -->
+    <h2>5. Google Sign-In (OAuth)</h2>
+    <p>Du hast die Möglichkeit, dich mit deinem Google-Konto auf dieser Website einzuloggen. Dieser Dienst wird
+      bereitgestellt von Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+    <p>Dabei wird eine Verbindung zu den Servern von Google hergestellt, wodurch Google deine IP-Adresse erfährt. Wenn
+      du dich einloggst, übermittelt Google bestimmte Daten aus deinem Profil an uns (in der Regel Name, E-Mail-Adresse
+      und Profilbild), abhängig von deinen Datenschutzeinstellungen bei Google.</p>
+    <p>Zweck: Authentifizierung und personalisierte Ansprache auf der Website. Eine dauerhafte Speicherung dieser Daten
+      in einer Datenbank auf unserem Server findet derzeit nicht statt (nur temporär im Browser-Speicher/LocalStorage).
+    </p>
+    <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Deine Einwilligung durch Klick auf den Login-Button).</p>
+    <p>Weitere Infos: <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Datenschutzerklärung
+        von Google</a>.</p>
+
+    <h2>6. Cookies und externe Inhalte</h2>
+    <p>Abgesehen vom Google Sign-In (siehe Punkt 5) werden keine weiteren externen Tracker oder Werbenetzwerke
+      eingebunden.</p>
+    <p>Durch den Google Login können Cookies von Google gesetzt werden, um den Login-Status zu verwalten.</p>
+
+    <h2>7. Drittlandübermittlungen</h2>
+    <p>Durch die Nutzung von Google Services (Login) und E-Mail (Firefox Relay) können Daten in Drittländer
+      (insbesondere USA) übertragen werden. Wir weisen darauf hin, dass in den USA u.U. kein mit der EU vergleichbares
+      Datenschutzniveau besteht.</p>
+
+    <h2>8. Deine Rechte</h2>
+    <p>Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit sowie Widerspruch gegen
+      Verarbeitungen nach Art. 6 Abs. 1 lit. f DSGVO.</p>
+    <p>Beschwerderecht: Zuständige Datenschutzaufsichtsbehörde, z. B. <a href="https://www.bfdi.bund.de/"
+        rel="noopener">BfDI</a> oder die Behörde deines Bundeslands/Wohnsitzes.</p>
+
+    <h2>9. Pflicht zur Bereitstellung</h2>
+    <p>Logdaten sind für die Bereitstellung der Website technisch erforderlich. E-Mail-Daten sind für die Bearbeitung
+      deiner Anfrage erforderlich. Der Google Login ist optional.</p>
+
+    <p>Stand: Dezember 2026</p>
+    <footer>"It's perfect!" LinuxMC</footer>
+  </main>
+</body>
+
+</html>
